@@ -121,7 +121,7 @@ def crear_plato():
 
     top.geometry(f'{ancho}x{alto}+{co0rdenada_x}+{coordenada_y}')
 
-def mostrar_menu():
+def mostrar_menu(): ############# en Proceso de crear la parte Grafica ##############
 
     conexion = sqlite3.connect('Menu_del_dia.db')
     cursor = conexion.cursor()
