@@ -108,15 +108,17 @@ def crear_plato():
     entry = Entry(top)
     entry.grid(row=2, column=1, sticky=W)
     Button(top, text='Agregar Plato', command=datos).grid(columnspan=2, pady=10)
-    # Gets the requested values of the height and widht.
+    
+    #  obtiene el ancho y largo de la pantalla
     screen_width = top.winfo_screenwidth()
     screen_height = top.winfo_screenheight()
 
-    # Gets both half the screen width/height and window width/height
+    # crea el centro de la pantalla
     co0rdenada_x = int((screen_width/2) - (ancho/2))
     coordenada_y = int((screen_height/2) - (alto/2))
 
-    # Positions the window in the center of the page.
+    # posiciona la ventana en el centro
+
     top.geometry(f'{ancho}x{alto}+{co0rdenada_x}+{coordenada_y}')
 
 def mostrar_menu():
@@ -146,15 +148,15 @@ menubar = Menu(root)
 root.config(menu=menubar)
 
 
-# Gets the requested values of the height and widht.
+# obtiene el valor de la pantalla.
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
  
-# Gets both half the screen width/height and window width/height
+# obtiene el centro de la pantalla con los datos anteriores
 co0rdenada_x = int((screen_width/2) - (alto/2))
 coordenada_y = int((screen_height/2) - (ancho/2))
  
-# Positions the window in the center of the page.
+# posiciona la ventana en el centro
 root.geometry(f'{alto}x{ancho}+{co0rdenada_x}+{coordenada_y}')
 
 #################### MENU BAR ##################################
